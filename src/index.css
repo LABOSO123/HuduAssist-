@@ -5,20 +5,22 @@
 }
 
 :root {
-  --primary-color: #006600;
-  --primary-dark: #004d00;
-  --primary-light: #00a300;
-  --secondary-color: #ff6600;
-  --background: #f5f7fa;
-  --surface: #ffffff;
-  --text-primary: #1a1a1a;
-  --text-secondary: #666666;
-  --border-color: #e0e0e0;
+  /* Kenyan/Huduma Centre inspired colors - vibrant and professional */
+  --primary-color: #B71C1C;        /* Deep red - Kenyan flag */
+  --primary-dark: #8B0000;         /* Darker red */
+  --primary-light: #E53935;        /* Lighter red */
+  --secondary-color: #1B5E20;      /* Deep green - Kenyan flag */
+  --accent-color: #FFC107;          /* Gold/yellow accent */
+  --background: #FAFAFA;            /* Soft off-white */
+  --surface: #FFFFFF;              /* Pure white */
+  --text-primary: #212121;          /* Dark text */
+  --text-secondary: #757575;        /* Medium gray */
+  --border-color: #E0E0E0;          /* Light border */
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
-  --success: #28a745;
-  --warning: #ffc107;
-  --error: #dc3545;
+  --success: #2E7D32;
+  --warning: #F57C00;
+  --error: #C62828;
 }
 
 body {

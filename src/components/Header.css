@@ -2,10 +2,11 @@
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: white;
   padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .header-content {
@@ -51,12 +52,15 @@
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 12px;
   background: white;
-  padding: 4px;
+  padding: 6px;
+  display: block;
+  border: 2px solid var(--secondary-color);
+  box-shadow: var(--shadow);
 }
 
 .brand-info {
