@@ -6,7 +6,7 @@ function Header({ onNewChat, showNewChat }) {
     <header className="header">
       <div className="header-content">
         <div className="logo-container">
-          <img src="/HuduAssist Logo.png" alt="HuduAssist Logo" className="logo" />
+          <img src="/HuduAssist-Logo.png" alt="HuduAssist Logo" className="logo" />
           <div className="brand-info">
             <h1 className="brand-title">HuduAssist</h1>
             <p className="brand-subtitle">AI Assistant for Huduma Centre</p>

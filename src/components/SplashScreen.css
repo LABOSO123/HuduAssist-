@@ -4,13 +4,14 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: var(--background);
+  background: linear-gradient(135deg, var(--kenyan-red) 0%, var(--kenyan-green) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
   animation: fadeIn 0.5s ease-in;
   transition: opacity 0.5s ease-out;
+  overflow: hidden;
 }
 
 .splash-screen.fade-out {
@@ -31,20 +32,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 }
 
 .splash-logo-wrapper {
-  width: 200px;
-  height: 200px;
-  border-radius: 24px;
-  background: white;
-  padding: 20px;
-  box-shadow: var(--shadow-lg);
+  width: 80vw;
+  height: 80vh;
+  max-width: 600px;
+  max-height: 600px;
+  min-width: 400px;
+  min-height: 400px;
+  border-radius: 30px;
+  background: var(--kenyan-white);
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: scaleIn 0.6s ease-out, float 3s ease-in-out infinite 0.6s;
+  animation: scaleIn 0.8s ease-out, float 3s ease-in-out infinite 1s;
+  border: 8px solid var(--kenyan-black);
+  overflow: hidden;
+  position: relative;
 }
 
 @keyframes scaleIn {
@@ -72,17 +84,34 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--kenyan-red);
+  border-radius: 20px;
+}
+
+.logo-placeholder span {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--kenyan-white);
 }
 
 .splash-title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--kenyan-white);
   margin: 0;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 0.8s ease-out 0.3s both;
+  letter-spacing: 2px;
 }
 
 @keyframes fadeInUp {
@@ -104,11 +133,12 @@
 }
 
 .loader-dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: var(--kenyan-white);
   animation: bounce 1.4s infinite ease-in-out both;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .loader-dot:nth-child(1) {
@@ -132,13 +162,18 @@
 
 @media (max-width: 768px) {
   .splash-logo-wrapper {
-    width: 150px;
-    height: 150px;
-    padding: 15px;
+    width: 90vw;
+    height: 90vw;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 30px;
+    border-width: 6px;
   }
 
   .splash-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 

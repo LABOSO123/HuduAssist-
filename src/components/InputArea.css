@@ -23,8 +23,8 @@
 }
 
 .input-wrapper:focus-within {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--kenyan-red);
+  box-shadow: 0 0 0 3px rgba(222, 41, 16, 0.1);
   border-width: 2px;
 }
 
@@ -52,9 +52,9 @@
 }
 
 .send-button {
-  background: var(--primary-color);
-  color: white;
-  border: none;
+  background: var(--kenyan-red);
+  color: var(--kenyan-white);
+  border: 2px solid var(--kenyan-black);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -68,7 +68,8 @@
 }
 
 .send-button:hover:not(:disabled) {
-  background: var(--primary-dark);
+  background: var(--kenyan-green);
+  border-color: var(--kenyan-black);
   transform: scale(1.05);
 }
 

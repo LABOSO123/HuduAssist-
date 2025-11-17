@@ -52,9 +52,6 @@ function WelcomeScreen({ onStartChat, onQuickAction }) {
     <div className="welcome-screen">
       <div className="welcome-content">
         <div className="logo-section">
-          <div className="logo-wrapper">
-            <img src="/HuduAssist Logo.png" alt="HuduAssist Logo" className="welcome-logo" />
-          </div>
           <h1 className="welcome-title">HuduAssist</h1>
           <p className="welcome-subtitle">Your AI Assistant for Huduma Centre Services</p>
           <p className="welcome-description">
