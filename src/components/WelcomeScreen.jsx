@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../HuduAssist Logo.png'
 import './WelcomeScreen.css'
 
 function WelcomeScreen({ onStartChat, onQuickAction }) {
@@ -54,7 +53,7 @@ function WelcomeScreen({ onStartChat, onQuickAction }) {
       <div className="welcome-content">
         <div className="logo-section">
           <div className="logo-wrapper">
-            <img src={logo} alt="HuduAssist Logo" className="welcome-logo" />
+            <img src="/HuduAssist Logo.png" alt="HuduAssist Logo" className="welcome-logo" />
           </div>
           <h1 className="welcome-title">HuduAssist</h1>
           <p className="welcome-subtitle">Your AI Assistant for Huduma Centre Services</p>
