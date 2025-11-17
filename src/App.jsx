@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Header from './components/Header'
+import SplashScreen from './components/SplashScreen'
 import WelcomeScreen from './components/WelcomeScreen'
 import ChatContainer from './components/ChatContainer'
 import InputArea from './components/InputArea'
 import './App.css'
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true)
   const [showWelcome, setShowWelcome] = useState(true)
   const [messages, setMessages] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -76,6 +78,10 @@ function App() {
   const handleNewChat = () => {
     setMessages([])
     setShowWelcome(true)
+  }
+
+  if (showSplash) {
+    return <SplashScreen onComplete={() => setShowSplash(false)} />
   }
 
   return (

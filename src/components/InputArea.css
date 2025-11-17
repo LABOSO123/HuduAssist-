@@ -24,8 +24,8 @@
 
 .input-wrapper:focus-within {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(183, 28, 28, 0.1);
-  border-width: 3px;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-width: 2px;
 }
 
 .message-input {

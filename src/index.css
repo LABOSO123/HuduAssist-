@@ -5,22 +5,22 @@
 }
 
 :root {
-  /* Kenyan/Huduma Centre inspired colors - vibrant and professional */
-  --primary-color: #B71C1C;        /* Deep red - Kenyan flag */
-  --primary-dark: #8B0000;         /* Darker red */
-  --primary-light: #E53935;        /* Lighter red */
-  --secondary-color: #1B5E20;      /* Deep green - Kenyan flag */
-  --accent-color: #FFC107;          /* Gold/yellow accent */
-  --background: #FAFAFA;            /* Soft off-white */
-  --surface: #FFFFFF;              /* Pure white */
-  --text-primary: #212121;          /* Dark text */
-  --text-secondary: #757575;        /* Medium gray */
-  --border-color: #E0E0E0;          /* Light border */
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
-  --success: #2E7D32;
-  --warning: #F57C00;
-  --error: #C62828;
+  /* Modern, clean, professional color scheme */
+  --primary-color: #2563eb;        /* Modern blue */
+  --primary-dark: #1e40af;         /* Darker blue */
+  --primary-light: #3b82f6;       /* Lighter blue */
+  --secondary-color: #6366f1;     /* Indigo accent */
+  --accent-color: #8b5cf6;        /* Purple accent */
+  --background: #f8fafc;          /* Very light gray-blue */
+  --surface: #ffffff;            /* Pure white */
+  --text-primary: #1e293b;        /* Dark slate */
+  --text-secondary: #64748b;      /* Medium slate */
+  --border-color: #e2e8f0;        /* Light slate border */
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
 }
 
 body {
